@@ -44,7 +44,7 @@ and are excluded to avoid redistributing third-party binary data.
 
 ## Included Source Files
 
-* `moformat.s`
+* `moformat.s`\
   Main logic of the formatter.
 
 ---
@@ -54,27 +54,27 @@ and are excluded to avoid redistributing third-party binary data.
 The following files are referenced by the original source code,\
 but are not included in this repository:
 
-* `clripl.s`
+* `clripl.s`\
   Utility code/data related to clearing existing IPL area.\
   Not included because it depends on non-original formatter-derived data.
 
-* `data_block00.s`
+* `data_block00.s`\
   Data block written to sector range $00–1F of Human68k-formatted media.\
   Not included because it contains data derived from existing formatter output.
 
-* `data_block40.s`
+* `data_block40.s`\
   Data block written to sector range $40–41 of Human68k-formatted media.\
   Not included because it contains data derived from existing formatter output.
 
-* `ibm_ipl.s`
+* `ibm_ipl.s`\
   IBM-format IPL / boot sector related data.\
   Not included because it is based on formatter-derived binary data.
 
-* `moipll.s`
+* `moipll.s`\
   Utility used when extracting or handling MO IPL related data.\
   Not included together with formatter-derived components.
 
-* `sibm_ipl.s`
+* `sibm_ipl.s`\
   Semi-IBM format IPL related data.\
   Not included because it is based on formatter-derived binary data.
 
