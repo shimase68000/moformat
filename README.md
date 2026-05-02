@@ -11,6 +11,9 @@ MOFORMAT is a formatter for Magneto-Optical (MO) disks on X68000.
 It was designed with compatibility as the highest priority,\
 matching the behavior of existing formatters used at the time.
 
+At the same time, it was created to significantly reduce formatting time,\
+by performing logical formatting only instead of full physical formatting.
+
 Supported formats include:
 
 * Human68k format
@@ -26,8 +29,11 @@ MOFORMAT was not designed based on official specifications.
 Instead, it was developed by observing the actual output of existing formatters\
 and reproducing their behavior to achieve compatibility.
 
-This approach ensured that formatted media would behave identically\
-to those created by standard tools.
+Rather than reconstructing undocumented format structures,\
+it reproduces known-good layouts using data derived from actual formatter output.
+
+This approach ensures that formatted media behaves identically\
+to media created by standard tools.
 
 ---
 
